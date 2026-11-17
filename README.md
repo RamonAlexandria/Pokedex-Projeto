@@ -36,3 +36,53 @@ Sucesso: Extrai o nome (data.name), o número identificador (data.id) e o sprite
 
 Erro (Status diferente de 200): Oculta a imagem e exibe "Not found :c" caso o Pokémon pesquisado não exista.
 
+3. Navegação e Eventos
+
+Formulário de Busca: Captura o evento submit, previne o comportamento padrão da página (event.preventDefault()) e normaliza a entrada do usuário com .toLowerCase().
+
+Botões Prev e Next: Controlam a variável de estado searchPokemon para navegar sequencialmente pelos IDs dos Pokémon (com trava para não buscar IDs menores que 1).
+
+🛠️ Tecnologias Utilizadas
+
+HTML5: Estruturação semântica utilizando tags como <main>, <form> e <section>.
+
+CSS3: Estilização responsiva, posicionamento absoluto sobre a imagem base da Pokédex, tipografia customizada (Oxanium) e efeitos de profundidade nos botões.
+
+JavaScript (ES6+): Fetch API, funções assíncronas (async/await), manipulação do DOM e gerenciamento de eventos.
+
+PokéAPI: API pública utilizada como fonte de dados e sprites.
+
+📂 Estrutura de Pastas
+
+Pokedex-Projeto/
+├── estilo/
+│   └── style.css       # Folha de estilos e responsividade
+├── imagens/
+│   ├── favicon.png     # Ícone da aba do navegador
+│   └── pokedex.png     # Imagem base da interface da Pokédex
+├── JavaScript/
+│   └── script.js       # Lógica de consumo da PokéAPI e eventos
+├── .gitattributes      # Configurações de atributos do Git
+├── index.html          # Estrutura HTML principal
+└── README.md           # Documentação do projeto
+
+
+🚀 Como Executar o Projeto
+
+Clone este repositório ou baixe os arquivos para o seu computador:
+
+git clone https://github.com/seu-usuario/Pokedex-Projeto.git
+
+
+Acesse a pasta do projeto:
+
+cd Pokedex-Projeto
+
+
+Abra o arquivo index.html diretamente no seu navegador de preferência (ou utilize a extensão Live Server no VS Code).
+
+Nota: É necessário estar conectado à internet para que as requisições à PokéAPI e o carregamento da fonte Oxanium funcionem corretamente.
+
+
+
+Desenvolvido por: *Ramon Alexandria* 💻
